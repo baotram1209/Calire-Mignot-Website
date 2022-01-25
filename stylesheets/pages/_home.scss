@@ -1,3 +1,31 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+.home {
+    // display: flex;
+    // width: calc (100vw - #{$max-width-nav});
+    margin-left: $max-width-nav;
+    padding: 1rem;
+    // flex-direction: column;
+    // gap: 2rem;
+}
+.hero, .feature-1, .feature-2 {
+    background-color: $secondary-background;
+}
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+   grid-area: 
+   " hero__1 hero__1 hero__1 "
+   " hero__2 hero__3 hero__3 "
+   " hero__2 hero__4 hero__4 "
+   " hero__2 hero__5 hero__6 "
+   ; 
+}
+
+@for $i from 1 through 6 {
+    .hero__#{$i} {
+      grid-area: hero__#{$i};
+    }
+  }

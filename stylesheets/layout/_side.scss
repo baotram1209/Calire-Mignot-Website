@@ -1,0 +1,25 @@
+aside {
+    position: fixed;
+    height: 80vh;
+    width: $max-width-nav;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: $nav-color;
+    display: flex;
+    // flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.search {
+    display: block;
+    width: 165px;
+justify-self: flex-start; // why it doesn't work?
+}
+aside nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
