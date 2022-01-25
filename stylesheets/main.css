@@ -371,9 +371,18 @@ a {
   text-decoration: none;
 }
 
-a:hover, a:active, a:focus {
-  color: #251605;
-  text-decoration: underline;
+img {
+  width: 100%;
+  height: auto;
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+figure, h1, h2, h3, p {
+  display: block;
 }
 
 /**
@@ -478,6 +487,20 @@ aside nav ul {
   margin: 0;
 }
 
+.button {
+  background-color: #f3c468;
+  border: none;
+  padding: 1em;
+  text-align: center;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+.button:hover {
+  background-color: #fbf6ef;
+  border: 0.2em solid #f3c468;
+}
+
 .home {
   margin-left: 210px;
   padding: 1rem;
@@ -492,32 +515,59 @@ aside nav ul {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-area: " hero__1 hero__1 hero__1 " " hero__2 hero__3 hero__3 " " hero__2 hero__4 hero__4 " " hero__2 hero__5 hero__6 ";
+  -ms-grid-rows: 0.5fr 0.5fr 0.5fr 1fr;
+      grid-template-rows: 0.5fr 0.5fr 0.5fr 1fr;
+      grid-template-areas: "hero__1 hero__1 hero__1" "hero__2 hero__3 hero__3" "hero__2 hero__4 hero__4" "hero__2 hero__5 hero__6";
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
 }
 
 .hero__1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: hero__1;
 }
 
 .hero__2 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
   grid-area: hero__2;
 }
 
 .hero__3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
   grid-area: hero__3;
 }
 
 .hero__4 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
   grid-area: hero__4;
 }
 
 .hero__5 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
   grid-area: hero__5;
 }
 
 .hero__6 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
   grid-area: hero__6;
+}
+
+.hero__gestalt, .hero__phone, .hero__rdv {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
 }
 /*# sourceMappingURL=main.css.map */

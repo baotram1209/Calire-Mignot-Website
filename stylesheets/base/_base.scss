@@ -29,8 +29,20 @@ a {
   color: $text-color;
   text-decoration: none;
 
-  @include on-event {
-    color: $text-color;
-    text-decoration: underline;
-  }
+  // @include on-event {
+  //   color: $text-color;
+  //   text-decoration: underline;
+  // }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+figure{
+  padding: 0;
+  margin: 0;
+}
+figure, h1, h2, h3, p {
+  display: block;
 }

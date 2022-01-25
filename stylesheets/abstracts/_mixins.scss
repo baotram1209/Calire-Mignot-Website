@@ -9,7 +9,7 @@
 @mixin on-event($self: false) {
   @if $self {
     &,
-    &:hover,
+    // &:hover,
     &:active,
     &:focus {
       @content;

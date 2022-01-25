@@ -15,17 +15,29 @@
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-   grid-area: 
-   " hero__1 hero__1 hero__1 "
-   " hero__2 hero__3 hero__3 "
-   " hero__2 hero__4 hero__4 "
-   " hero__2 hero__5 hero__6 "
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 1fr;
+   grid-template-areas: 
+   "hero__1 hero__1 hero__1"
+   "hero__2 hero__3 hero__3"
+   "hero__2 hero__4 hero__4"
+   "hero__2 hero__5 hero__6"
    ; 
+   justify-items: center;
+   align-items: center;
+   padding: 1rem;
 }
 
 @for $i from 1 through 6 {
     .hero__#{$i} {
       grid-area: hero__#{$i};
+     
+    
     }
+  }
+  .hero__gestalt, .hero__phone, .hero__rdv {
+    align-self: start;
+  }
+
+  .feature-1 {
+
   }
