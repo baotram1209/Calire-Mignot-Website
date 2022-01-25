@@ -10,8 +10,14 @@
     // gap: 2rem;
 }
 .hero, .feature-1, .feature-2 {
-    background-color: $secondary-background;
+  background-color: $secondary-background;
+  margin-bottom: 1rem;
 }
+
+// -----------------------------------------------------------------------------
+// HERO
+// -----------------------------------------------------------------------------
+
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -24,20 +30,60 @@
    ; 
    justify-items: center;
    align-items: center;
+   gap: 1rem;
    padding: 1rem;
 }
 
 @for $i from 1 through 6 {
     .hero__#{$i} {
       grid-area: hero__#{$i};
-     
-    
-    }
+     }
   }
   .hero__gestalt, .hero__phone, .hero__rdv {
     align-self: start;
   }
 
+// -----------------------------------------------------------------------------
+// FEATURE 1 - QUI SUIS-JE?
+// -----------------------------------------------------------------------------
   .feature-1 {
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+   grid-template-areas: 
+   "feature-1__1 feature-1__1 feature-1__1"
+   "feature-1__2 feature-1__2 feature-1__4"
+   "feature-1__3 feature-1__3 feature-1__4"
+   ; 
+   justify-items: center;
+   align-items: center;
+   gap: 1rem;
+   padding: 1rem;
   }
+
+  @for $i from 1 through 4 {
+    .feature-1__#{$i} {
+      grid-area: feature-1__#{$i};
+     }
+  }
+
+  // -----------------------------------------------------------------------------
+// FEATURE 2 - COMMENT CONSULTER?
+// -----------------------------------------------------------------------------
+.feature-2 {
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 1rem;
+gap: 1rem;
+
+  &__list-action {
+display: flex;
+flex-wrap: wrap;
+// justify-content: space-evenly;
+gap: 2rem;
+align-items: center;
+justify-content: center;
+  }
+}

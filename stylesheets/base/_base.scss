@@ -39,10 +39,12 @@ img {
   width: 100%;
   height: auto;
 }
-figure{
+
+figure, h1, h2, h3, p, ul {
+  display: block;
   padding: 0;
   margin: 0;
 }
-figure, h1, h2, h3, p {
-  display: block;
+ul {
+  list-style: none;
 }
