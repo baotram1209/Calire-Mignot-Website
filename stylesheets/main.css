@@ -456,7 +456,7 @@ body {
 aside {
   position: -webkit-sticky;
   position: sticky;
-  height: 80%;
+  height: 80vh;
   width: 210px;
   top: 0;
   left: 0;
