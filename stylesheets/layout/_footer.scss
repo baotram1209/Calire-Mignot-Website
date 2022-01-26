@@ -1,3 +1,16 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+footer {
+    // height: 100% - $height-side-bar;
+    background-color: $footer-color;
+    color: $secondary-background;
+    z-index: 200;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    max-width: 100%;
+    height: auto;
+    font-size: 0.8rem; // change to variable later
+    padding: 1rem;
+}

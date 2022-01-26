@@ -454,8 +454,9 @@ body {
 }
 
 aside {
-  position: fixed;
-  height: 80vh;
+  position: -webkit-sticky;
+  position: sticky;
+  height: 80%;
   width: 210px;
   top: 0;
   left: 0;
@@ -474,6 +475,7 @@ aside {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  z-index: 100;
 }
 
 .search {
@@ -485,6 +487,25 @@ aside {
 aside nav ul {
   padding: 0;
   margin: 0;
+}
+
+footer {
+  background-color: #545c52;
+  color: #fbf6ef;
+  z-index: 200;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  max-width: 100%;
+  height: auto;
+  font-size: 0.8rem;
+  padding: 1rem;
 }
 
 .button {
