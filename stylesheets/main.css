@@ -578,8 +578,8 @@ aside nav ul {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 3fr 1fr;
-      grid-template-rows: 1fr 3fr 1fr;
+  -ms-grid-rows: 1fr 2fr 1fr;
+      grid-template-rows: 1fr 2fr 1fr;
       grid-template-areas: "feature-1__1 feature-1__1 feature-1__1" "feature-1__2 feature-1__2 feature-1__4" "feature-1__3 feature-1__3 feature-1__4";
   justify-items: center;
   -webkit-box-align: center;
@@ -587,6 +587,7 @@ aside nav ul {
           align-items: center;
   gap: 1rem;
   padding: 1rem;
+  height: auto;
 }
 
 .feature-1__1 {
