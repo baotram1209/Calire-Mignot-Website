@@ -1,90 +1,123 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
-.home {
-    // display: flex;
-    // width: calc (100vw - #{$max-width-nav});
-    margin-left: $max-width-nav;
-    padding: 1rem;
-    // flex-direction: column;
-    // gap: 2rem;
-}
-.hero, .feature-1, .feature-2 {
-  background-color: $secondary-background;
-  margin-bottom: 1rem;
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-areas: 
+  "grid-item-1 grid-item-1"
+  "grid-item-2 grid-item-3"
+  "grid-item-4 grid-item-4";
+ 
 }
 
-// -----------------------------------------------------------------------------
-// HERO
-// -----------------------------------------------------------------------------
-
-.hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
-   grid-template-areas: 
-   "hero__1 hero__1 hero__1"
-   "hero__2 hero__3 hero__3"
-   "hero__2 hero__4 hero__4"
-   "hero__2 hero__5 hero__6"
-   ; 
-   justify-items: center;
-   align-items: center;
-   gap: 1rem;
-   padding: 1rem;
+@for $i from 1 through 4 {
+      .grid-item-#{$i} {
+        grid-area: grid-item-#{$i};
+       }
+    }
+.container-subgrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: 
+  "subgrid-item-1 subgrid-item-1"
+  "subgrid-item-2 subgrid-item-3"
+  "subgrid-item-4 subgrid-item-4"
+  "subgrid-item-5 subgrid-item-5";
+  text-align: center;
 }
 
-@for $i from 1 through 6 {
-    .hero__#{$i} {
-      grid-area: hero__#{$i};
-     }
-  }
-  .hero__gestalt, .hero__phone, .hero__rdv {
-    align-self: start;
-  }
-
-// -----------------------------------------------------------------------------
-// FEATURE 1 - QUI SUIS-JE?
-// -----------------------------------------------------------------------------
-  .feature-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto;
-   grid-template-areas: 
-   "feature-1__1 feature-1__1 feature-1__1"
-   "feature-1__2 feature-1__2 feature-1__4"
-   "feature-1__3 feature-1__3 feature-1__4"
-   ; 
-   justify-items: center;
-   align-items: center;
-   gap: 1rem;
-   padding: 1rem;
-   height: auto;
-  }
-
-  @for $i from 1 through 4 {
-    .feature-1__#{$i} {
-      grid-area: feature-1__#{$i};
-     }
-  }
-
-  // -----------------------------------------------------------------------------
-// FEATURE 2 - COMMENT CONSULTER?
-// -----------------------------------------------------------------------------
-.feature-2 {
-  display: flex;
-  flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 1rem;
-gap: 1rem;
-
-  &__list-action {
-display: flex;
-flex-wrap: wrap;
-// justify-content: space-evenly;
-gap: 2rem;
-align-items: center;
-justify-content: center;
-  }
+@for $i from 1 through 5 {
+  .subgrid-item-#{$i} {
+    grid-area: subgrid-item-#{$i};
+   }
 }
+
+// .home {
+//     // display: flex;
+//     // width: calc (100vw - #{$max-width-nav});
+//     margin-left: $max-width-nav;
+//     padding: 1rem;
+//     // flex-direction: column;
+//     // gap: 2rem;
+// }
+// .hero, .feature-1, .feature-2 {
+//   background-color: $secondary-background;
+//   margin-bottom: 1rem;
+// }
+
+// // -----------------------------------------------------------------------------
+// // HERO
+// // -----------------------------------------------------------------------------
+
+// .hero {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr;
+//     grid-template-rows: auto auto auto auto;
+//    grid-template-areas: 
+//    "hero__1 hero__1 hero__1"
+//    "hero__2 hero__3 hero__3"
+//    "hero__2 hero__4 hero__4"
+//    "hero__2 hero__5 hero__6"
+//    ; 
+//    justify-items: center;
+//    align-items: center;
+//    gap: 1rem;
+//    padding: 1rem;
+// }
+
+// @for $i from 1 through 6 {
+//     .hero__#{$i} {
+//       grid-area: hero__#{$i};
+//      }
+//   }
+//   .hero__gestalt, .hero__phone, .hero__rdv {
+//     align-self: start;
+//   }
+
+// // -----------------------------------------------------------------------------
+// // FEATURE 1 - QUI SUIS-JE?
+// // -----------------------------------------------------------------------------
+//   .feature-1 {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr;
+//     grid-template-rows: auto auto auto;
+//    grid-template-areas: 
+//    "feature-1__1 feature-1__1 feature-1__1"
+//    "feature-1__2 feature-1__2 feature-1__4"
+//    "feature-1__3 feature-1__3 feature-1__4"
+//    ; 
+//    justify-items: center;
+//    align-items: center;
+//    gap: 1rem;
+//    padding: 1rem;
+//    height: auto;
+//   }
+
+//   @for $i from 1 through 4 {
+//     .feature-1__#{$i} {
+//       grid-area: feature-1__#{$i};
+//      }
+//   }
+
+//   // -----------------------------------------------------------------------------
+// // FEATURE 2 - COMMENT CONSULTER?
+// // -----------------------------------------------------------------------------
+// .feature-2 {
+//   display: flex;
+//   flex-direction: column;
+// justify-content: center;
+// align-items: center;
+// padding: 1rem;
+// gap: 1rem;
+
+//   &__list-action {
+// display: flex;
+// flex-wrap: wrap;
+// // justify-content: space-evenly;
+// gap: 2rem;
+// align-items: center;
+// justify-content: center;
+//   }
+// }

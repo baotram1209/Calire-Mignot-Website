@@ -22,92 +22,72 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
+<body class="container">
 
-    <!--========== HEADER (PHONE) ========-->
+  <!--========== HEADER (PHONE) ========-->
 
-  <header>
+  <header class="grid-item-1">
     <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
       <!-- aria -control to say the button control the ul with id=primary-control -->
       <!-- aria-expanded to set: the menu is not expanded until you click on the burger to change aria-expanded to 'true'-->
       <span></span>
     </button>
+    <figure>
+      <img src="#" alt="/">
+    </figure>
   </header>
 
-   <!--========== SIDE-BAR ========-->
-  <aside>
+  <!--========== SIDE-BAR ========-->
+  <aside class="grid-item-2">
     <input class="search" type="text" placeholder="...">
     <nav>
       <ul>
         <li><a href="index.htlml">Accueil</a></li>
-        <li><a href="A-propos.htlml">A propos</a></li>
-        <li><a href="Comment-consulter.htlml">Comment consulter?</a></li>
-        <li><a href="Cadre-du-travail.htlml">Cadre du travail</a></li>
-        <li><a href="Resources.htlml">Ressources</a></li>
-        <li><a href="Contact.htlml">Contact</a></li>
+        <li><a href="presentation.htlml">Présentation</a></li>
+        <li><a href="senager.htlml">S'engager sous un travail sur soi</a></li>
+        <li><a href="lien.htlml">En savoir plus</a></li>
+        <li><a href="contact.htlml">Me contacter</a></li>
       </ul>
     </nav>
   </aside>
 
   <!--========== MAIN ========-->
-  <main class="home">
-    <section class="hero">
-     
-      <h1 class="hero__1 hero__title">
-        Claire Mignot – Psychothérapie Cergy
+  <main class="grid-item-3 container-subgrid">
+ 
+
+      <h1 class="subgrid-item-1">
+        Claire MIGNOT – Gestalt thérapeute
       </h1>
-      <figure class="hero__2 hero__image">
+
+      <figure class="subgrid-item-2">
         <img src="img/pic-3.jpg" alt="/">
       </figure>
-      <a class="hero__3 hero__gestalt button" href="Gestalt-therapie">Gestalt-thérapie</a>
-      <h2 class="hero__4">Contactez-moi</h2>
+      <article class="subgrid-item-3">
+      <h2>Formée à la thérapie du lien</h2>
+      <p>Cergy le Haut</p>
+      <p>Tél: 0652406162</p>
+    </article>
 
-      <a class="hero__5 hero__phone button" href="#">0652406162</a>
-
-      <a class="hero__6 hero__rdv button" href="https://www.pagesjaunes.fr/pros/55741519#calendrier">Prenez RDV</a>
-    </section>
-
-    <section class="feature-1">
-      <h2 class="feature-1__1">
-        Qui suis-je?
-      </h2>
-      <p class="feature-1__2">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti quis magni possimus fuga molestiae tempora,
-        eum explicabo magnam reprehenderit eius, nostrum laudantium officia dicta. Atque qui voluptates laborum
-        consequuntur voluptatibus.
-      </p>
-      <a class="feature-1__3 button" href="#">En savoir plus</a>
-      <figure class="feature-1__4">
-        <img src="img/pic-1.jpg" alt="/">
-      </figure>
-    </section>
-
-    <section class="feature-2">
-      <h2 class="feature-2__1">
-        Comment-consulter ?
-      </h2>
-      <p class="feature-2__2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, laboriosam explicabo quae porro, laudantium eum
-        dolorem quidem autem similique dolorum corrupti id, ipsum exercitationem numquam repellendus reiciendis at
-        commodi cumque!</p>
-      <ul class="feature-2__3 feature-2__list-action">
-        <li><a class="button" href="#">Motif de consultation</a></li>
-        <li><a class="button" href="#">Thérapie ou relation d'aide?</a></li>
-        <li><a class="button" href="#">Déroulement d'une séance</a></li>
-        <li><a class="button" href="#">Tarif</a></li>
-      </ul>
-    </section>
+  
+        <h2 class="subgrid-item-4">
+          Bla bla
+        </h2>
+        <p class="subgrid-item-5">
+          blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla
+        </p>
   </main>
 
-<!--========== FOOTER ========-->
+  <!--========== FOOTER ========-->
 
-  <footer>
+  <footer class="grid-item-4">
     <section>
       <h3>
         Informations pratiques:
       </h3>
-      <p>Phone: 0652406162</p>
+      <p>Adresse: 1 Villa des Aubades, 95800, Cergy</p>
+      <p>Tél: 0652406162</p>
       <p>Email: cmi.mignot@wanadoo.fr </p>
-      <p>Adress: 1 Villa des Aubades, 95800, Cergy</p>
+
     </section>
     <section>
       <p>Claire Mignot © 2022</p>
