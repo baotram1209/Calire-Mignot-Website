@@ -373,12 +373,12 @@ a {
 
 img {
   max-width: 100%;
-  max-height: 100%;
+  max-height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-figure, h1, h2, h3, p, ul {
+figure, img, h1, h2, h3, p, ul {
   display: block;
   padding: 0;
   margin: 0;
@@ -455,6 +455,11 @@ body {
   width: 1px;
 }
 
+header > img {
+  height: 30vh;
+  width: 100%;
+}
+
 aside {
   top: 0;
   left: 0;
@@ -467,13 +472,13 @@ aside {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  z-index: 100;
+  gap: 5rem;
 }
 
 .search {
@@ -485,6 +490,44 @@ aside {
 aside nav ul {
   padding: 0;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+@media (max-width: 39.9375em) {
+  .primary-navigation {
+    background-color: aqua;
+    position: fixed;
+    inset: 0 50% 0 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: -webkit-transform 350ms ease-out;
+    transition: -webkit-transform 350ms ease-out;
+    transition: transform 350ms ease-out;
+    transition: transform 350ms ease-out, -webkit-transform 350ms ease-out;
+  }
+  .primary-navigation[data-visible="true"] {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+  }
 }
 
 footer {
@@ -528,6 +571,12 @@ footer {
       grid-template-areas: "grid-item-1 grid-item-1" "grid-item-2 grid-item-3" "grid-item-4 grid-item-4";
 }
 
+@media (max-width: 39.9375em) {
+  .container {
+        grid-template-areas: "grid-item-1 grid-item-1" "grid-item-3 grid-item-3" "grid-item-4 grid-item-4";
+  }
+}
+
 .grid-item-1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -552,10 +601,6 @@ footer {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: grid-item-4;
-}
-
-.grid-item-1 > figure {
-  max-height: 10vh;
 }
 
 .container-subgrid {
@@ -598,5 +643,16 @@ footer {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: subgrid-item-5;
+}
+
+.hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

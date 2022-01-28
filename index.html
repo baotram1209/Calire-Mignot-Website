@@ -18,6 +18,14 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="stylesheets/main.css">
+  <!-- Fontawesome -->
+  <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+  integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+  crossorigin="anonymous"
+/>
+
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -30,27 +38,45 @@
     <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
       <!-- aria -control to say the button control the ul with id=primary-control -->
       <!-- aria-expanded to set: the menu is not expanded until you click on the burger to change aria-expanded to 'true'-->
-      <span></span>
+      <i class="fas fa-bars fa-1x"></i>
     </button>
-    <figure>
-      <img src="/" alt="/">
-    </figure>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="true">
+   
+     <i class="fas fa-times fa-1x"></i>
+    </button>
+      <img src="img/pic-4.jpg" alt="/">
+    
   </header>
 
   <!--========== SIDE-BAR ========-->
-  <aside class="grid-item-2">
+  <aside class="grid-item-2 primary-navigation" id="primary-navigation"
+  data-visible="false">
     <input class="search" type="text" placeholder="...">
     <nav>
-      <ul>
+      <ul >
         <li><a href="index.htlml">Accueil</a></li>
         <li><a href="presentation.htlml">Présentation</a></li>
-        <li><a href="senager.htlml">S'engager sous un travail sur soi</a></li>
+        <li><a href="sengager.htlml">S'engager dans un travail sur soi</a></li>
         <li><a href="lien.htlml">En savoir plus</a></li>
         <li><a href="contact.htlml">Me contacter</a></li>
       </ul>
     </nav>
   </aside>
 
+  <!--========== SIDE-BAR- MOBILE ========-->
+  <!-- <div class="primary-navigation" id="primary-navigation"
+  data-visible="false">
+    <input class="search" type="text" placeholder="...">
+    <nav>
+      <ul >
+        <li><a href="index.htlml">Accueil</a></li>
+        <li><a href="presentation.htlml">Présentation</a></li>
+        <li><a href="sengager.htlml">S'engager dans un travail sur soi</a></li>
+        <li><a href="lien.htlml">En savoir plus</a></li>
+        <li><a href="contact.htlml">Me contacter</a></li>
+      </ul>
+    </nav>
+  </div> -->
   <!--========== MAIN ========-->
   <main class="grid-item-3 container-subgrid">
  
@@ -62,9 +88,9 @@
       <figure class="subgrid-item-2">
         <img src="img/pic-3.jpg" alt="/">
       </figure>
-      <article class="subgrid-item-3">
-      <h2>Formée à la thérapie du lien</h2>
-      <p>Cergy le Haut</p>
+      <article class="subgrid-item-3 hero-text">
+      <p>Formée à la thérapie du lien</p>
+      <h2>Cergy le Haut</h2>
       <p>Tél: 0652406162</p>
     </article>
 
@@ -100,6 +126,7 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/nav.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
