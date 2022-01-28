@@ -17,6 +17,10 @@
         grid-area: grid-item-#{$i};
        }
     }
+
+.grid-item-1 > figure {
+  max-height: 10vh;
+}    
 .container-subgrid {
   display: grid;
   grid-template-columns: 1fr 2fr;

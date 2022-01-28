@@ -373,7 +373,9 @@ a {
 
 img {
   max-width: 100%;
-  height: auto;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 figure, h1, h2, h3, p, ul {
@@ -550,6 +552,10 @@ footer {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: grid-item-4;
+}
+
+.grid-item-1 > figure {
+  max-height: 10vh;
 }
 
 .container-subgrid {
