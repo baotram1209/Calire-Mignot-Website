@@ -388,12 +388,32 @@ ul {
   list-style: none;
 }
 
+h1, h2, h3 {
+  text-align: center;
+}
+
+p.center {
+  text-align: center;
+}
+
+p.start {
+  text-align: left;
+}
+
+@font-face {
+  font-family: Virgil;
+  src: url("../font/Virgil.woff2") format("woff2");
+}
+
 /**
  * Basic typography style for copy text
  */
 body {
   color: #251605;
-  font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Virgil", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 1.4;
 }
 
 /**
@@ -500,6 +520,10 @@ aside nav ul {
   gap: 1rem;
 }
 
+aside nav ul a:hover {
+  background-color: #fbf6ef;
+}
+
 .mobile-nav-toggle {
   display: none;
 }
@@ -569,6 +593,7 @@ footer {
   -ms-grid-columns: 1fr 5fr;
       grid-template-columns: 1fr 5fr;
       grid-template-areas: "grid-item-1 grid-item-1" "grid-item-2 grid-item-3" "grid-item-4 grid-item-4";
+  grid-gap: 1rem;
 }
 
 @media (max-width: 39.9375em) {
@@ -608,8 +633,7 @@ footer {
   display: grid;
   -ms-grid-columns: 1fr 2fr;
       grid-template-columns: 1fr 2fr;
-      grid-template-areas: "subgrid-item-1 subgrid-item-1" "subgrid-item-2 subgrid-item-3" "subgrid-item-4 subgrid-item-4" "subgrid-item-5 subgrid-item-5";
-  text-align: center;
+      grid-template-areas: "subgrid-item-1 subgrid-item-1" "subgrid-item-2 subgrid-item-3" "subgrid-item-4 subgrid-item-4";
 }
 
 .subgrid-item-1 {
@@ -617,18 +641,24 @@ footer {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: subgrid-item-1;
+  background-color: #fbf6ef;
+  padding: 1rem;
 }
 
 .subgrid-item-2 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: subgrid-item-2;
+  background-color: #fbf6ef;
+  padding: 1rem;
 }
 
 .subgrid-item-3 {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: subgrid-item-3;
+  background-color: #fbf6ef;
+  padding: 1rem;
 }
 
 .subgrid-item-4 {
@@ -636,13 +666,8 @@ footer {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: subgrid-item-4;
-}
-
-.subgrid-item-5 {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: subgrid-item-5;
+  background-color: #fbf6ef;
+  padding: 1rem;
 }
 
 .hero-text {

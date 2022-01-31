@@ -49,3 +49,14 @@ figure, img, h1, h2, h3, p, ul {
 ul {
   list-style: none;
 }
+
+// TEXT ALIGN
+h1, h2, h3 {
+  text-align: center;
+}
+p.center {
+  text-align: center;
+}
+p.start {
+  text-align: left;
+}

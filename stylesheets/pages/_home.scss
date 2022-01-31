@@ -9,7 +9,7 @@
   "grid-item-1 grid-item-1"
   "grid-item-2 grid-item-3"
   "grid-item-4 grid-item-4";
-
+  grid-gap: 1rem;
 // .primary-navigation {
 //   display: none;
 }
@@ -22,9 +22,7 @@
     "grid-item-1 grid-item-1"
     "grid-item-3 grid-item-3"
     "grid-item-4 grid-item-4";
-    // aside {
-    //   display: none;
-    // }
+  
 }
 }
 
@@ -42,15 +40,16 @@
   grid-template-areas: 
   "subgrid-item-1 subgrid-item-1"
   "subgrid-item-2 subgrid-item-3"
-  "subgrid-item-4 subgrid-item-4"
-  "subgrid-item-5 subgrid-item-5";
-  text-align: center;
+  "subgrid-item-4 subgrid-item-4";
 }
 
-@for $i from 1 through 5 {
+@for $i from 1 through 4 {
   .subgrid-item-#{$i} {
     grid-area: subgrid-item-#{$i};
+    background-color: $secondary-background;
+    padding: 1rem;
    }
+   
 }
 
 .hero-text {
