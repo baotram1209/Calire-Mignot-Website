@@ -15,14 +15,16 @@ $text-font-stack: 'Virgil', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica
 $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
 
 // Font size
-$fs-xl: 5rem;
+$fs-xl: 2rem;
 $fs-m: 1.5rem;
 $fs-s: 1.25rem;
 $fs-xs: 1rem;
-@include breakpoint-up (small) {
-  $fs-xl: 7rem;
+$fs-xxs: 0.5rem;
+@media (min-width: 40em) {
+  $fs-xl: 3rem;
   $fs-m: 2rem;
-$fs-xs: 1.125rem;
+$fs-xs: 1.25rem;
+$fs-xxs: 0.8rem;
 }
 
 
@@ -40,13 +42,9 @@ $footer-color: #545c52;
 
 
 
-
-
-
-
-/// Container's maximum width
-// /// @type Length
-// $max-width: 1180px !default;
+// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
 
 // //SIZE OF COMPONENTS
 // $max-width-nav: 210px;

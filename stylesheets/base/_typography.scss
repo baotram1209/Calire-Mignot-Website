@@ -20,3 +20,16 @@ h3{
 p {
   font-size: $fs-xs;
 }
+
+//Specific font-size
+aside a {
+  font-size: $fs-s;
+} 
+footer {
+  h3 {
+    font-size: $fs-xs;
+  }
+  p{
+    font-size:  $fs-xxs;
+  }
+}

@@ -2,40 +2,42 @@
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
 
-/// Event wrapper
-/// @author Harry Roberts
-/// @param {Bool} $self [false] - Whether or not to include current selector
-/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
-@mixin on-event($self: false) {
-  @if $self {
-    &,
-    // &:hover,
-    &:active,
-    &:focus {
-      @content;
-    }
-  } @else {
-    &:hover,
-    &:active,
-    &:focus {
-      @content;
-    }
-  }
-}
+// /// Event wrapper
+// /// @author Harry Roberts
+// /// @param {Bool} $self [false] - Whether or not to include current selector
+// /// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+// @mixin on-event($self: false) {
+//   @if $self {
+//     &,
+//     // &:hover,
+//     &:active,
+//     &:focus {
+//       @content;
+//     }
+//   } @else {
+//     &:hover,
+//     &:active,
+//     &:focus {
+//       @content;
+//     }
+//   }
+// }
 
-/// Make a context based selector a little more friendly
-/// @author Kitty Giraudel
-/// @param {String} $context
-@mixin when-inside($context) {
-  #{$context} & {
-    @content;
-  }
-}
+// /// Make a context based selector a little more friendly
+// /// @author Kitty Giraudel
+// /// @param {String} $context
+// @mixin when-inside($context) {
+//   #{$context} & {
+//     @content;
+//   }
+// }
+
+
 //------MY CODE------------
 //Breakpoints
-@media (min-width: 64em){
-  //styles go here
-}
+// @media (min-width: 64em){
+//   //styles go here
+// }
 //64em=1024px desktop
 
 // 640px, 1024px, 1400px

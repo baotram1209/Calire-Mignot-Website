@@ -43,6 +43,17 @@
   "subgrid-item-4 subgrid-item-4";
 }
 
+@include breakpoint-down(small)  {
+  .container-subgrid {
+    grid-template-areas: 
+    "subgrid-item-1 subgrid-item-1"
+    "subgrid-item-2 subgrid-item-2"
+    "subgrid-item-3 subgrid-item-3"
+    "subgrid-item-4 subgrid-item-4"
+    ;
+  }
+}
+
 @for $i from 1 through 4 {
   .subgrid-item-#{$i} {
     grid-area: subgrid-item-#{$i};

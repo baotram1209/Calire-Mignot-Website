@@ -416,6 +416,34 @@ body {
   line-height: 1.4;
 }
 
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+aside a {
+  font-size: 1.25rem;
+}
+
+footer h3 {
+  font-size: 1rem;
+}
+
+footer p {
+  font-size: 0.5rem;
+}
+
 /**
  * Clear inner floats
  */
@@ -569,7 +597,6 @@ footer {
           align-items: start;
   max-width: 100%;
   height: auto;
-  font-size: 0.8rem;
   padding: 1rem;
 }
 
@@ -634,6 +661,12 @@ footer {
   -ms-grid-columns: 1fr 2fr;
       grid-template-columns: 1fr 2fr;
       grid-template-areas: "subgrid-item-1 subgrid-item-1" "subgrid-item-2 subgrid-item-3" "subgrid-item-4 subgrid-item-4";
+}
+
+@media (max-width: 39.9375em) {
+  .container-subgrid {
+        grid-template-areas: "subgrid-item-1 subgrid-item-1" "subgrid-item-2 subgrid-item-2" "subgrid-item-3 subgrid-item-3" "subgrid-item-4 subgrid-item-4";
+  }
 }
 
 .subgrid-item-1 {
