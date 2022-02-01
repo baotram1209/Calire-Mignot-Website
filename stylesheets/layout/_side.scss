@@ -60,12 +60,14 @@ background-color: $secondary-background;
         position: absolute;
         z-index: 9999;
         background-color: transparent;
-        // width: 2rem;
-        // height: 2rem;
+        background-image: url("background-image/icon-hamburger.svg");
+        background-repeat: no-repeat;
+        width: 2rem;
+        height: 2rem;
         border: 0;
        padding: 0;
     }
-    // .mobile-nav-toggle[aria-expanded="true"]{
-    //     background-image: url("../../img/icon-close.svg");
-    // }
+    .mobile-nav-toggle[aria-expanded="true"]{
+        background-image: url("background-image/icon-close.svg");
+    }
 }
