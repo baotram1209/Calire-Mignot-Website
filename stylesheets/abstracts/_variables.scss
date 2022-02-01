@@ -8,14 +8,24 @@
 
 /// Regular font family
 /// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: 'Virgil', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 
 /// Code (monospace) font family
 /// @type List
 $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
 
-
-
+// Font size
+$fs-xl: 2rem;
+$fs-m: 1.5rem;
+$fs-s: 1.25rem;
+$fs-xs: 1rem;
+$fs-xxs: 0.5rem;
+@media (min-width: 40em) {
+  $fs-xl: 3rem;
+  $fs-m: 2rem;
+$fs-xs: 1.25rem;
+$fs-xxs: 0.8rem;
+}
 
 
 /// Copy text color
@@ -32,38 +42,34 @@ $footer-color: #545c52;
 
 
 
-
-
-
-
-/// Container's maximum width
+// Container's maximum width
 /// @type Length
 $max-width: 1180px !default;
 
-//SIZE OF COMPONENTS
-$max-width-nav: 210px;
-$height-nav: 80vh;
+// //SIZE OF COMPONENTS
+// $max-width-nav: 210px;
+// $height-nav: 80vh;
 
 
 
 
 
 /// Breakpoints map
-/// @prop {String} keys - Keys are identifiers mapped to a given length
-/// @prop {Map} values - Values are actual breakpoints expressed in pixels
-$breakpoints: (
-  'small': 320px,
-  'medium': 768px,
-  'large': 1024px,
-) !default;
+// /// @prop {String} keys - Keys are identifiers mapped to a given length
+// /// @prop {Map} values - Values are actual breakpoints expressed in pixels
+// $breakpoints: (
+//   'small': 320px,
+//   'medium': 768px,
+//   'large': 1024px,
+// ) !default;
 
 
 
 
 
 
-/// Relative or absolute URL where all assets are served from
-/// @type String
-/// @example scss - When using a CDN
-///   $base-url: 'http://cdn.example.com/assets/';
-$base-url: '/assets/' !default;
+// /// Relative or absolute URL where all assets are served from
+// /// @type String
+// /// @example scss - When using a CDN
+// ///   $base-url: 'http://cdn.example.com/assets/';
+// $base-url: '/assets/' !default;

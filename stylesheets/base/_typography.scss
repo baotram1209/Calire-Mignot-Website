@@ -3,5 +3,33 @@
  */
 body {
   color: $text-color;
-  font: normal 125% / 1.4 $text-font-stack;
+  font-family: $text-font-stack;
+  font-style: normal;
+ font-weight: 100;
+ line-height: 1.4;
+}
+h1 {
+  font-size: $fs-xl;
+}
+h2 {
+  font-size: $fs-m;
+}
+h3{
+  font-size: $fs-s;
+}
+p {
+  font-size: $fs-xs;
+}
+
+//Specific font-size
+aside a {
+  font-size: $fs-s;
+} 
+footer {
+  h3 {
+    font-size: $fs-xs;
+  }
+  p{
+    font-size:  $fs-xxs;
+  }
 }
