@@ -8,28 +8,35 @@ body {
  font-weight: 100;
  line-height: 1.4;
 }
+
+
+
+
+// RFS using bootstrap
 h1 {
-  font-size: $fs-xl;
+  @include font-size(2rem);
+  font-weight: 500;
 }
+
 h2 {
-  font-size: $fs-m;
+  @include font-size(1.5rem);
+  font-weight: 300;
 }
-h3{
-  font-size: $fs-s;
+h3 {
+  @include font-size(1.25rem);
+  font-weight: 300;
 }
 p {
-  font-size: $fs-xs;
+  @include font-size(1rem);
+  font-weight: 300;
 }
 
 //Specific font-size
-aside a, aside a p {
-  font-size: $fs-s;
-} 
 footer {
-  h3 {
-    font-size: $fs-xs;
+    h3 {
+      @include font-size(1rem);
+    }
+    p{
+      @include font-size(0.7rem);
+    }
   }
-  p{
-    font-size:  $fs-xxs;
-  }
-}

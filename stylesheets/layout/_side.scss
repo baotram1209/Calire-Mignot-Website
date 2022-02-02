@@ -21,7 +21,9 @@ aside {
 
 }
 
-
+// aside nav {
+//     margin: 0;
+// }
 aside nav ul {
     padding: 0;
     margin: 0;
@@ -67,6 +69,7 @@ background-color: $secondary-background;
         height: 2rem;
         border: 0;
        padding: 0;
+       
     }
     .mobile-nav-toggle[aria-expanded="true"]{
         background-image: url("background-image/icon-close.svg");
