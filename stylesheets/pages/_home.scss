@@ -52,6 +52,10 @@
     "subgrid-item-4 subgrid-item-4"
     ;
   }
+  .subgrid-item-2 img {
+  width: 20rem;
+    margin: auto
+  }
 }
 
 @for $i from 1 through 4 {

@@ -16,8 +16,9 @@ aside {
 
 .search {
     display: block;
-    width: 165px;
-justify-self: flex-start; // why it doesn't work?
+    width: 100%;
+   margin-top: 2rem;
+
 }
 
 
@@ -45,7 +46,7 @@ background-color: $secondary-background;
   @include breakpoint-down(small){
  
     .primary-navigation {
-        background-color: aqua;
+      
         position: fixed;
         inset: 0 50% 0 0; //shorthand for top right bottom left (When position is set to absolute or fixed, the top property specifies the distance between the element's outer margin of top edge and the inner border of the top edge of its containing block.) 
         // padding: #{"min(30vh, 10rem)"} 2em; // need to put in #{} so it works in sass, min takes the minimum of the 2, so when the screen is shorter, it doesn't take 10rem, but 30vh

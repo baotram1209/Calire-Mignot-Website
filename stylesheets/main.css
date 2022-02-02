@@ -365,7 +365,7 @@ html {
 /**
  * Basic styles for links
  */
-a {
+a, a:hover {
   display: block;
   color: #251605;
   text-decoration: none;
@@ -526,8 +526,8 @@ aside {
 
 .search {
   display: block;
-  width: 165px;
-  justify-self: flex-start;
+  width: 100%;
+  margin-top: 2rem;
 }
 
 aside nav ul {
@@ -553,7 +553,6 @@ aside nav ul a:hover {
 
 @media (max-width: 39.9375em) {
   .primary-navigation {
-    background-color: aqua;
     position: fixed;
     inset: 0 50% 0 0;
     -webkit-transform: translateX(-100%);
@@ -668,6 +667,10 @@ footer {
 @media (max-width: 39.9375em) {
   .container-subgrid {
         grid-template-areas: "subgrid-item-1 subgrid-item-1" "subgrid-item-2 subgrid-item-2" "subgrid-item-3 subgrid-item-3" "subgrid-item-4 subgrid-item-4";
+  }
+  .subgrid-item-2 img {
+    width: 20rem;
+    margin: auto;
   }
 }
 
