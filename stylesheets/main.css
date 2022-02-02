@@ -400,6 +400,10 @@ p.start {
   text-align: left;
 }
 
+body {
+  margin: 0.5rem;
+}
+
 /**
  * Basic typography style for copy text
  */
@@ -598,19 +602,29 @@ aside nav ul a:hover {
 footer {
   background-color: #545c52;
   color: #fbf6ef;
-  z-index: 200;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
   max-width: 100%;
   height: auto;
-  padding: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+@media (min-width: 40em) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    text-align: left;
+  }
+}
+
+footer h3 {
+  text-align: left;
 }
 
 .button {
