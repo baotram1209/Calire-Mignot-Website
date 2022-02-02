@@ -400,17 +400,12 @@ p.start {
   text-align: left;
 }
 
-@font-face {
-  font-family: Virgil;
-  src: url("../font/Virgil.woff2") format("woff2");
-}
-
 /**
  * Basic typography style for copy text
  */
 body {
   color: #251605;
-  font-family: "Virgil", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Klee One", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-style: normal;
   font-weight: 100;
   line-height: 1.4;
@@ -432,7 +427,7 @@ p {
   font-size: 1rem;
 }
 
-aside a {
+aside a, aside a p {
   font-size: 1.25rem;
 }
 
