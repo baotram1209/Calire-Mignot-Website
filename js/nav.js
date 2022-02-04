@@ -39,4 +39,3 @@ window.onclick = (e) => {
     }
 }
 
-

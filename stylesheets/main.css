@@ -610,10 +610,6 @@ aside nav ul {
   text-align: start;
 }
 
-.btn:hover {
-  border: medium solid #EDA71D;
-}
-
 .drop-wrapper {
   position: relative;
 }
@@ -675,8 +671,8 @@ footer h3 {
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 20ch auto;
-      grid-template-columns: 20ch auto;
+  -ms-grid-columns: 23ch auto;
+      grid-template-columns: 23ch auto;
       grid-template-areas: "grid-item-1 grid-item-1" "grid-item-2 grid-item-3" "grid-item-4 grid-item-4";
   grid-gap: 1rem;
 }
