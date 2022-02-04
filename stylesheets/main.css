@@ -404,14 +404,16 @@ body {
   margin: 0.5rem;
 }
 
+p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 /**
  * Basic typography style for copy text
  */
 body {
   color: #251605;
-  font-family: "Klee One", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 100;
+  font-family: "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   line-height: 1.4;
 }
 
@@ -445,6 +447,10 @@ h3 {
 p {
   font-size: 1rem;
   font-weight: 300;
+}
+
+p b {
+  font-weight: 700;
 }
 
 footer h3 {
@@ -596,7 +602,12 @@ aside nav ul {
 }
 
 .btn {
-  background-color: bisque;
+  background-color: none;
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 100%;
+  text-align: start;
 }
 
 .drop-wrapper {
@@ -611,13 +622,22 @@ aside nav ul {
 .drop-menu {
   display: none;
   position: absolute;
-  background-color: aqua;
 }
 
 .drop-menu.active {
-  display: block;
-  width: 10ch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+  background-color: #F4CC7B;
+  width: 20ch;
   z-index: 100;
+  margin-left: 1rem;
+  padding-left: 1rem;
 }
 
 footer {
@@ -651,15 +671,15 @@ footer h3 {
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 17ch auto;
-      grid-template-columns: 17ch auto;
-      grid-template-areas: "grid-item-1 grid-item-1" "grid-item-2 grid-item-3" "grid-item-4 grid-item-4";
+  -ms-grid-columns: 20ch auto;
+      grid-template-columns: 20ch auto;
+      grid-template-areas: "grid-item-1 grid-item-1" "grid-item-2 grid-item-3" "grid-item-4 grid-item-4";
   grid-gap: 1rem;
 }
 
 @media (max-width: 39.9375em) {
   .container {
-        grid-template-areas: "grid-item-1 grid-item-1" "grid-item-3 grid-item-3" "grid-item-4 grid-item-4";
+        grid-template-areas: "grid-item-1 grid-item-1" "grid-item-3 grid-item-3" "grid-item-4 grid-item-4";
   }
 }
 
@@ -753,5 +773,24 @@ footer h3 {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 1rem;
+}
+
+.container-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+.container-1 figure {
+  max-width: 60%;
+  height: auto;
 }
 /*# sourceMappingURL=main.css.map */

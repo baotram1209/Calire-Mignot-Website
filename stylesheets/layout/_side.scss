@@ -103,7 +103,13 @@ aside nav ul {
 
 .btn {
     // text-align: left;
-    background-color: bisque;
+    background-color: none;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 100%;
+    text-align: start;
+    
 }
 
 
@@ -114,18 +120,25 @@ aside nav ul {
 
 .dropright{
     left: 100%;
-    top: 0%;
-
-  
+    top: 0%; 
 }
 .drop-menu{
     display: none;
+
     position: absolute;
-    background-color: aqua;
+ 
+
+    
 }
 .drop-menu.active {
-    display: block;
-width: 10ch;
-z-index: 100;
+  
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: $secondary-nav;
+    width: 20ch;
+    z-index: 100;
+    margin-left: 1rem;
+    padding-left: 1rem;
 }
 

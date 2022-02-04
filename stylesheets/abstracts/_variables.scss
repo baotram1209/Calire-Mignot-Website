@@ -8,7 +8,7 @@
 
 /// Regular font family
 /// @type List
-$text-font-stack: 'Klee One', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 
 /// Code (monospace) font family
 /// @type List
@@ -35,6 +35,7 @@ $text-color: #251605 !default;
 /// Main colors
 /// @type Color
 $nav-color: #f3c468 !default; //for nav bar & button
+$secondary-nav:#F4CC7B;
 $text-color: #251605;
 $primary-background: white;
 $secondary-background: #fbf6ef; //also color for footer text

@@ -65,3 +65,8 @@ p.start {
 body {
   margin: 0.5rem;
 }
+
+//Space between paragraph
+p:not(:last-child)  {
+  margin-bottom: 1rem;
+}
