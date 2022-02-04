@@ -559,10 +559,6 @@ aside nav ul {
   gap: 1rem;
 }
 
-aside nav ul a:hover {
-  background-color: #fbf6ef;
-}
-
 .mobile-nav-toggle {
   display: none;
 }
@@ -599,6 +595,31 @@ aside nav ul a:hover {
   }
 }
 
+.btn {
+  background-color: bisque;
+}
+
+.drop-wrapper {
+  position: relative;
+}
+
+.dropright {
+  left: 100%;
+  top: 0%;
+}
+
+.drop-menu {
+  display: none;
+  position: absolute;
+  background-color: aqua;
+}
+
+.drop-menu.active {
+  display: block;
+  width: 10ch;
+  z-index: 100;
+}
+
 footer {
   background-color: #545c52;
   color: #fbf6ef;
@@ -627,25 +648,11 @@ footer h3 {
   text-align: left;
 }
 
-.button {
-  background-color: #f3c468;
-  border: none;
-  padding: 1em;
-  text-align: center;
-  display: inline-block;
-  border-radius: 8px;
-}
-
-.button:hover {
-  background-color: #fbf6ef;
-  border: 0.2em solid #f3c468;
-}
-
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 5fr;
-      grid-template-columns: 1fr 5fr;
+  -ms-grid-columns: 17ch auto;
+      grid-template-columns: 17ch auto;
       grid-template-areas: "grid-item-1 grid-item-1" "grid-item-2 grid-item-3" "grid-item-4 grid-item-4";
   grid-gap: 1rem;
 }

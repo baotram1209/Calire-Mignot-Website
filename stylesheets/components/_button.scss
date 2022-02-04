@@ -1,17 +1,17 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
-.button {
-    background-color: $nav-color;
-    border: none;
-    padding: 1em;
-    text-align: center;
-    display: inline-block;
-    border-radius: 8px;
-    // transition-duration: 0.4s;
+// .button {
+//     background-color: $nav-color;
+//     border: none;
+//     padding: 1em;
+//     text-align: center;
+//     display: inline-block;
+//     border-radius: 8px;
+//     // transition-duration: 0.4s;
 
-    &:hover {
-        background-color: $secondary-background;
-        border: 0.2em solid $nav-color; 
-    }
-}
+//     &:hover {
+//         background-color: $secondary-background;
+//         border: 0.2em solid $nav-color; 
+//     }
+// }
