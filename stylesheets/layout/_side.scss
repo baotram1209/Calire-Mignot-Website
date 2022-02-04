@@ -109,7 +109,10 @@ aside nav ul {
     padding-bottom: 0;
     width: 100%;
     text-align: start;
-    
+
+    &:hover {
+        border: medium solid $tertiary-nav; //width style color
+    }
 }
 
 

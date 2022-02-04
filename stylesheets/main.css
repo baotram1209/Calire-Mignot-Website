@@ -404,7 +404,7 @@ body {
   margin: 0.5rem;
 }
 
-p:not(:last-child) {
+main p:not(:last-child) {
   margin-bottom: 1rem;
 }
 
@@ -610,6 +610,10 @@ aside nav ul {
   text-align: start;
 }
 
+.btn:hover {
+  border: medium solid #EDA71D;
+}
+
 .drop-wrapper {
   position: relative;
 }
@@ -673,13 +677,13 @@ footer h3 {
   display: grid;
   -ms-grid-columns: 20ch auto;
       grid-template-columns: 20ch auto;
-      grid-template-areas: "grid-item-1 grid-item-1" "grid-item-2 grid-item-3" "grid-item-4 grid-item-4";
+      grid-template-areas: "grid-item-1 grid-item-1" "grid-item-2 grid-item-3" "grid-item-4 grid-item-4";
   grid-gap: 1rem;
 }
 
 @media (max-width: 39.9375em) {
   .container {
-        grid-template-areas: "grid-item-1 grid-item-1" "grid-item-3 grid-item-3" "grid-item-4 grid-item-4";
+        grid-template-areas: "grid-item-1 grid-item-1" "grid-item-3 grid-item-3" "grid-item-4 grid-item-4";
   }
 }
 
