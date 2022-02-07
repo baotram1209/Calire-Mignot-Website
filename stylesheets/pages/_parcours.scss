@@ -1,6 +1,6 @@
 .parcours-last {
 display: grid;
-@include breakpoint-up(medium)  {
+@include breakpoint-up(large)  {
     grid-template-columns: 2fr 1fr;
     grid-template-areas:
     "parcours-last-subgrid-1 parcours-last-subgrid-3"

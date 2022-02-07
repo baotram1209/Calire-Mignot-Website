@@ -618,7 +618,7 @@ aside nav ul {
   position: relative;
 }
 
-.dropright-1, .dropright-2 {
+.dropright-1, .dropright-2, .dropright-3 {
   left: 100%;
   top: 0%;
 }
@@ -821,7 +821,7 @@ footer h3 {
   display: grid;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 64em) {
   .parcours-last {
     -ms-grid-columns: 2fr 1fr;
         grid-template-columns: 2fr 1fr;
@@ -851,7 +851,7 @@ footer h3 {
     display: grid;
     -ms-grid-columns: 2fr 1fr;
         grid-template-columns: 2fr 1fr;
-        grid-template-areas: "approche-last-subgrid-1 approche-last-subgrid-2" "approche-last-subgrid-3 approche-last-subgrid-3";
+        grid-template-areas: "approche-last-subgrid-1 approche-last-subgrid-2" "approche-last-subgrid-3 approche-last-subgrid-3";
     justify-items: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -871,7 +871,7 @@ footer h3 {
   grid-area: approche-last-subgrid-3;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 64em) {
   .cadre-last {
     display: -ms-grid;
     display: grid;
