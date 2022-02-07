@@ -24,7 +24,7 @@ html {
 /**
  * Basic styles for links
  */
-a, a:hover {
+nav a, a:hover {
   display: block;
   color: $text-color;
   text-decoration: none;
@@ -51,7 +51,7 @@ figure, img, h1, h2, h3, p, ul {
 main img {
   padding: 1rem;
 }
-ul {
+nav ul {
   list-style: none;
 }
 
@@ -72,7 +72,7 @@ body {
   margin: 0.5rem;
 }
 
-//Space between paragraph
-main p:not(:last-child)  {
+//Space between paragraph, and lists
+main p:not(:last-child),ul:not(:last-child)  {
   margin-bottom: 1rem;
 }

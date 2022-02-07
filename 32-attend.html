@@ -1,0 +1,164 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+
+    <!-- Réponsive meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="stylesheets/main.css">
+
+
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body class="container">
+
+    <!--========== HEADER (PHONE) ========-->
+
+    <header class="grid-item-1">
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+
+            <span></span>
+        </button>
+
+        <img src="img/Cergy.JPG" alt="/">
+
+    </header>
+
+    <!--========== SIDE-BAR ========-->
+    <aside class="grid-item-2 primary-navigation" id="primary-navigation" data-visible="false">
+        <input class="search" type="text" placeholder="Recherche...">
+        <nav>
+            <ul>
+                <li><a class="btn" href="index.html">Accueil</a></li>
+
+
+
+                <div class="drop-wrapper">
+                    <button class="btn" data-target="#dropright-1">Présentation</button>
+                    <div class="drop-menu dropright-1" id="dropright-1">
+                        <a href="parcours.html">Mon parcours</a>
+                        <a href="approche.html">Mon approche</a>
+                        <a href="cadre.html">Mon cadre éthique et déontologique</a>
+                    </div>
+                </div>
+
+                <div class="drop-wrapper">
+                    <button class="btn" data-target="#dropright-2">
+                        S'engager
+                        <br>
+                        dans un travail
+                        <br>
+                        sur soi
+                    </button>
+                    <div class="drop-menu dropright-2" id="dropright-2">
+                        <a href="parcours.html">Pour quel motif consulter ?</a>
+                        <a href="approche.html">Qu’attendre des séances ?</a>
+                        <a href="cadre.html">Comment se déroule une séance ?</a>
+                    </div>
+                </div>
+
+                <li><a href="pratique.htlml">Sur un plan pratique</a></li>
+                <li><a href="lien.htlml">En savoir plus</a></li>
+                <li><a href="contact.htlml">Contact</a></li>
+
+                <li>
+
+                </li>
+
+            </ul>
+        </nav>
+    </aside>
+    <!--========== MAIN ========-->
+    <main class="container-1 grid-item-3">
+        <h1>Que pouvez-vous attendre de cette démarche ? </h1>
+        <section>
+            <p>
+                <b>D’abord, ce qui découle de toute demande de relation d’aide : </b> trouver du soutien devant une
+                difficulté, mieux gérer les émotions difficiles ou débordantes, prendre du recul pour mieux comprendre
+                la situation, recontacter ses propres ressources pour trouver ses solutions. Et c’est déjà très précieux
+                et utile.
+            </p>
+            <p>
+                <b>Engager un travail sur vous plus profond, si vous le souhaitez,</b> appellera de votre part un niveau
+                d’investissement différent. Mettre de la conscience sur ce qui nous habite, modifier au fil du temps
+                certaines représentations que nous avions de nous-mêmes et des autres, être plus en contact avec notre
+                élan de vie, c’est gratifiant car cela apporte du mouvement et de la joie, fait gagner en liberté de
+                sensation et d’action. Cela peut être par moments remuant intérieurement, et je serai attentive au cours
+                de ce parcours à la prise en compte et au respect de votre fenêtre de tolérance émotionnelle.
+            </p>
+
+
+        </section>
+        <a class="button-content" href="22-approche.html">Voir l’onglet « Mon approche ».</a>
+    </main>
+
+    <!--========== FOOTER ========-->
+
+    <footer class="grid-item-4">
+        <section>
+            <h3>
+                Informations pratiques:
+            </h3>
+            <p>Adresse: 1 Villa des Aubades, 95800, Cergy</p>
+            <p>Tél: 06 52 40 61 62</p>
+            <p>Email: cmi.mignot@wanadoo.fr </p>
+
+        </section>
+        <section>
+            <p>Claire Mignot © 2022</p>
+            <p>Mentions légales - Info cookies</p>
+        </section>
+
+    </footer>
+
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/nav.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+
+    <!-- Bootstrap-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
