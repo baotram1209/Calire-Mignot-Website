@@ -1,0 +1,20 @@
+.parcours-last {
+display: grid;
+@include breakpoint-up(medium)  {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+    "parcours-last-subgrid-1 parcours-last-subgrid-3"
+    "parcours-last-subgrid-2 parcours-last-subgrid-3";
+    
+    justify-items: center;
+    align-items: center;
+}
+}
+
+  
+  @for $i from 1 through 3 {
+    .parcours-last-subgrid-#{$i} {
+      grid-area: parcours-last-subgrid-#{$i};
+     }
+     
+}

@@ -384,6 +384,10 @@ figure, img, h1, h2, h3, p, ul {
   margin: 0;
 }
 
+main img {
+  padding: 1rem;
+}
+
 ul {
   list-style: none;
 }
@@ -392,12 +396,12 @@ h1, h2, h3 {
   text-align: center;
 }
 
-p.center {
-  text-align: center;
+main p {
+  text-align: justify;
 }
 
-p.start {
-  text-align: left;
+p.center {
+  text-align: center;
 }
 
 body {
@@ -614,7 +618,7 @@ aside nav ul {
   position: relative;
 }
 
-.dropright {
+.dropright-1, .dropright-2 {
   left: 100%;
   top: 0%;
 }
@@ -666,6 +670,27 @@ footer {
 
 footer h3 {
   text-align: left;
+}
+
+.container-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  background-color: #fbf6ef;
+  padding: 1rem;
+}
+
+.container-1 figure {
+  max-width: 60%;
+  height: auto;
 }
 
 .container {
@@ -775,22 +800,58 @@ footer h3 {
   gap: 1rem;
 }
 
-.container-1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 2rem;
+.parcours-last {
+  display: -ms-grid;
+  display: grid;
 }
 
-.container-1 figure {
-  max-width: 60%;
-  height: auto;
+@media (min-width: 40em) {
+  .parcours-last {
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: "parcours-last-subgrid-1 parcours-last-subgrid-3" "parcours-last-subgrid-2 parcours-last-subgrid-3";
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.parcours-last-subgrid-1 {
+  grid-area: parcours-last-subgrid-1;
+}
+
+.parcours-last-subgrid-2 {
+  grid-area: parcours-last-subgrid-2;
+}
+
+.parcours-last-subgrid-3 {
+  grid-area: parcours-last-subgrid-3;
+}
+
+@media (min-width: 40em) {
+  .approche-last {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: "approche-last-subgrid-1 approche-last-subgrid-2" "approche-last-subgrid-3 approche-last-subgrid-3";
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.approche-last .approche-last-subgrid-1 {
+  grid-area: approche-last-subgrid-1;
+}
+
+.approche-last .approche-last-subgrid-2 {
+  grid-area: approche-last-subgrid-2;
+}
+
+.approche-last .approche-last-subgrid-3 {
+  grid-area: approche-last-subgrid-3;
 }
 /*# sourceMappingURL=main.css.map */

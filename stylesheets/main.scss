@@ -26,6 +26,7 @@
   'layout/header',
   'layout/side',
   'layout/footer',
+  'layout/content-1',
   'layout/layout';
 
 // 5. Components
@@ -35,7 +36,9 @@
 // 6. Page-specific styles
 @import
   'pages/home',
-  'pages/content-1';
+  'pages/parcours',
+  'pages/approche';
+ 
 
 // 7. Themes
 @import
