@@ -28,9 +28,9 @@
 
   <!-- Google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
   <!-- My CSS -->
   <link rel="stylesheet" href="stylesheets/main.css">
 
@@ -45,7 +45,7 @@
 
   <header class="grid-item-1">
     <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
- 
+
       <span></span>
     </button>
 
@@ -60,7 +60,7 @@
       <ul>
         <li><a class="btn" href="index.html">Accueil</a></li>
 
-      
+
 
         <li class="drop-wrapper">
           <button class="btn" data-target="#dropright-1">Présentation</button>
@@ -91,13 +91,13 @@
           <div class="drop-menu dropright-3" id="dropright-3">
             <a href="41-tarif.html">Tarif et remboursement</a>
             <a href="42-acces.html">Accès au cabinet</a>
-          
+
           </div>
         </li>
 
-      
-        <li><a href="5-lien.html">En savoir plus</a></li>
-        <li><a href="6-contact.html">Contact</a></li>
+
+        <li><a href="5-lien.htlml">En savoir plus</a></li>
+        <li><a href="6-contact.htlml">Contact</a></li>
 
 
         </li>
@@ -108,44 +108,40 @@
 
 
   <!--========== MAIN ========-->
-  <main class="grid-item-3 container-subgrid">
+  <main class="grid-item-3 contact">
+    <!-- Contact form -->
+    <h1>
 
+      Me contacter
 
-    <h1 class="subgrid-item-1">
-      Claire MIGNOT – Gestalt thérapeute
-      <p class="center">Formée à la thérapie du lien</p>
     </h1>
 
-    <figure class="subgrid-item-2">
-      <img src="img/Claire-Mignot.JPG" alt="/">
-    </figure>
-    <article class="subgrid-item-3 hero-text">
 
-      <h2>Cergy le Haut</h2>
-      <p class="center">Tél: 06 52 40 61 62</p>
+    <form class="form-contact" action="/submit">
+      <p>
+        <label for="Name">Prénom/NOM *</label>
+        <input type="text" name="Name" id="Name" pattern="[A-Za-z]+" required>
+      </p>
+      <p>
+        <label for="Message">Message *</label>
+        <input type="text" name="Message" id="Message" required>
+      </p>
+      <button class="button-content button-send">Envoyer</button>
+    </form>
+
+
+    <!-- RDV -->
+  
+      <h2>
+        Prendre RDV
+      </h2>
+      <article class="rdv">
+      <a class="button-content rdv__btn" href="https://www.pagesjaunes.fr/pros/55741519">En ligne</a>
+      <p class="button-content rdv__btn">Tél: 06 52 40 61 62 </p>
     </article>
 
 
-    <!-- <h2 class="subgrid-item-4">
-      Bla bla
-    </h2> -->
-    <article class="subgrid-item-4">
-      <p class="start">
-        <!--text align: start-->
-        Vous trouverez sur ce site des informations sur ma façon de travailler, ses fondements et sa mise en œuvre, et
-        aussi sur mon parcours personnel. Ces éléments sont importants pour envisager un travail avec la thérapeute
-        relationnelle que je suis. Entrer dans le dialogue qui est au cœur de ma pratique supposera en effet un niveau
-        de confiance suffisant pour oser progressivement, et à votre mesure, vous dévoiler, avec ce que vous êtes. Vous
-        pouvez me contacter par mail ou téléphone si vous souhaitez des informations complémentaires ou des
-        éclaircissements.
-      </p>
-      <p class="start">
-        Un thérapeute a pour « mission » de soutenir l’élan de vie présent en chacun de ses patients, doté de sa
-        singularité, son environnement, ses besoins, ses désirs, ses difficultés et ses ressources propres. Et chaque
-        thérapeute est lui-même singulier. Je vous invite à prendre le temps nécessaire pour chercher et en trouver un
-        avec qui vous pourrez vous sentir suffisamment à l’aise. Bonne recherche, et peut-être à bientôt.
-      </p>
-    </article>
+
   </main>
 
   <!--========== FOOTER ========-->

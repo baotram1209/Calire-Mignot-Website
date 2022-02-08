@@ -12,9 +12,14 @@
 
     text-decoration: none;
     color: $text-color;
+    border: 0.2em solid $nav-color;
 
     &:hover {
         background-color: $secondary-background;
-        border: 0.2em solid $nav-color; 
+      
     }
+}
+.button-send {
+    margin: auto;
+
 }

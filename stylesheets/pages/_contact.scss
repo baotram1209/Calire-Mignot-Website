@@ -1,0 +1,22 @@
+.contact {
+    
+display: flex;
+flex-direction: column;
+gap: 2rem;
+background-color: $secondary-background;
+padding: 2rem;
+}
+
+.rdv {
+    display: flex;
+    justify-content: space-around;
+    &__btn {
+width: 20ch;
+    }
+    @include breakpoint-down(medium)  {
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+      }
+}
