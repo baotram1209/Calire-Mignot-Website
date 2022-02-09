@@ -42,10 +42,15 @@ img {
   object-fit: cover;
 }
 
-figure, img, h1, h2, h3, p, ul {
+ img, h1, h2, h3, p, ul {
   display: block;
   padding: 0;
   margin: 0;
+}
+figure {
+  display: block;
+  padding: 0;
+  margin: auto;
 }
 
 main img {

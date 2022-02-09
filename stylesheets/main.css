@@ -378,10 +378,16 @@ img {
      object-fit: cover;
 }
 
-figure, img, h1, h2, h3, p, ul {
+img, h1, h2, h3, p, ul {
   display: block;
   padding: 0;
   margin: 0;
+}
+
+figure {
+  display: block;
+  padding: 0;
+  margin: auto;
 }
 
 main img {
@@ -830,7 +836,7 @@ footer {
     display: grid;
     -ms-grid-columns: 2fr 1fr;
         grid-template-columns: 2fr 1fr;
-        grid-template-areas: "parcours-last-subgrid-1 parcours-last-subgrid-2" "parcours-last-subgrid-3 parcours-last-subgrid-2" "parcours-last-subgrid-4 parcours-last-subgrid-2";
+        grid-template-areas: "parcours-last-subgrid-1 parcours-last-subgrid-2" "parcours-last-subgrid-3 parcours-last-subgrid-2" "parcours-last-subgrid-4 parcours-last-subgrid-2";
     justify-items: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
