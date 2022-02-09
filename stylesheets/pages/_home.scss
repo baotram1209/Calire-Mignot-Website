@@ -7,7 +7,7 @@
 
 .container-subgrid {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas: 
   "subgrid-item-1 subgrid-item-1"
   "subgrid-item-2 subgrid-item-3"

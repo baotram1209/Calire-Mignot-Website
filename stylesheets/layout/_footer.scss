@@ -9,13 +9,15 @@ footer {
     height: auto;
     padding: 0.5rem;
     text-align: center;
+ 
     @include breakpoint-up(medium) {
         display: flex;
         justify-content: space-between;
         align-items: end;
         text-align: left;
+        h3 {
+            text-align: left;
+        }
     }
-    h3 {
-        text-align: left;
-    }
+  
 }

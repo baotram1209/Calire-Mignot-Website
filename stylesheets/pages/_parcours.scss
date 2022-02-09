@@ -1,10 +1,18 @@
 .parcours-last {
-display: grid;
+img {
+  max-width: 60%;
+  margin: auto;
+}
 @include breakpoint-up(large)  {
+  img {
+    max-width: 100%;
+  }
+  display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-areas:
-    "parcours-last-subgrid-1 parcours-last-subgrid-3"
-    "parcours-last-subgrid-2 parcours-last-subgrid-3";
+    "parcours-last-subgrid-1 parcours-last-subgrid-2"
+    "parcours-last-subgrid-3 parcours-last-subgrid-2"
+    "parcours-last-subgrid-4 parcours-last-subgrid-2";
     
     justify-items: center;
     align-items: center;
@@ -12,7 +20,7 @@ display: grid;
 }
 
   
-  @for $i from 1 through 3 {
+  @for $i from 1 through 4 {
     .parcours-last-subgrid-#{$i} {
       grid-area: parcours-last-subgrid-#{$i};
      }

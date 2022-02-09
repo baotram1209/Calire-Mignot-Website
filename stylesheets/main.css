@@ -666,10 +666,9 @@ footer {
             align-items: end;
     text-align: left;
   }
-}
-
-footer h3 {
-  text-align: left;
+  footer h3 {
+    text-align: left;
+  }
 }
 
 .container-1 {
@@ -757,8 +756,8 @@ footer h3 {
 .container-subgrid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 2fr;
-      grid-template-columns: 1fr 2fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
       grid-template-areas: "subgrid-item-1 subgrid-item-1" "subgrid-item-2 subgrid-item-3" "subgrid-item-4 subgrid-item-4";
 }
 
@@ -820,20 +819,25 @@ footer h3 {
   gap: 1rem;
 }
 
-.parcours-last {
-  display: -ms-grid;
-  display: grid;
+.parcours-last img {
+  max-width: 60%;
+  margin: auto;
 }
 
 @media (min-width: 64em) {
   .parcours-last {
+    display: -ms-grid;
+    display: grid;
     -ms-grid-columns: 2fr 1fr;
         grid-template-columns: 2fr 1fr;
-        grid-template-areas: "parcours-last-subgrid-1 parcours-last-subgrid-3" "parcours-last-subgrid-2 parcours-last-subgrid-3";
+        grid-template-areas: "parcours-last-subgrid-1 parcours-last-subgrid-2" "parcours-last-subgrid-3 parcours-last-subgrid-2" "parcours-last-subgrid-4 parcours-last-subgrid-2";
     justify-items: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .parcours-last img {
+    max-width: 100%;
   }
 }
 
@@ -849,6 +853,15 @@ footer h3 {
   grid-area: parcours-last-subgrid-3;
 }
 
+.parcours-last-subgrid-4 {
+  grid-area: parcours-last-subgrid-4;
+}
+
+.approche-last img {
+  max-width: 80%;
+  margin: auto;
+}
+
 @media (min-width: 64em) {
   .approche-last {
     display: -ms-grid;
@@ -860,6 +873,9 @@ footer h3 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .approche-last img {
+    max-width: 100%;
   }
 }
 
