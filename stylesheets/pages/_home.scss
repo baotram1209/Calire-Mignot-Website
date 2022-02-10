@@ -6,6 +6,7 @@
 
 
 .container-subgrid {
+  background-color: $secondary-background;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 
@@ -32,7 +33,7 @@
 @for $i from 1 through 4 {
   .subgrid-item-#{$i} {
     grid-area: subgrid-item-#{$i};
-    background-color: $secondary-background;
+    
     padding: 1rem;
    }
    

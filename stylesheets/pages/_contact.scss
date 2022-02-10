@@ -5,7 +5,23 @@ flex-direction: column;
 gap: 2rem;
 background-color: $secondary-background;
 padding: 2rem;
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
+input, textarea {
+width: 80%;
+resize: vertical;
+}
+
+textarea {
+    min-height: 6rem;
+}
+
+}
+
 
 .rdv {
     display: flex;

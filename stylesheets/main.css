@@ -760,6 +760,7 @@ footer {
 }
 
 .container-subgrid {
+  background-color: #fbf6ef;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -782,7 +783,6 @@ footer {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: subgrid-item-1;
-  background-color: #fbf6ef;
   padding: 1rem;
 }
 
@@ -790,7 +790,6 @@ footer {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: subgrid-item-2;
-  background-color: #fbf6ef;
   padding: 1rem;
 }
 
@@ -798,7 +797,6 @@ footer {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: subgrid-item-3;
-  background-color: #fbf6ef;
   padding: 1rem;
 }
 
@@ -807,7 +805,6 @@ footer {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: subgrid-item-4;
-  background-color: #fbf6ef;
   padding: 1rem;
 }
 
@@ -866,35 +863,6 @@ footer {
 .approche-last img {
   max-width: 80%;
   margin: auto;
-}
-
-@media (min-width: 64em) {
-  .approche-last {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 2fr 1fr;
-        grid-template-columns: 2fr 1fr;
-        grid-template-areas: "approche-last-subgrid-1 approche-last-subgrid-2" "approche-last-subgrid-3 approche-last-subgrid-3";
-    justify-items: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .approche-last img {
-    max-width: 100%;
-  }
-}
-
-.approche-last .approche-last-subgrid-1 {
-  grid-area: approche-last-subgrid-1;
-}
-
-.approche-last .approche-last-subgrid-2 {
-  grid-area: approche-last-subgrid-2;
-}
-
-.approche-last .approche-last-subgrid-3 {
-  grid-area: approche-last-subgrid-3;
 }
 
 @media (min-width: 64em) {
@@ -981,6 +949,26 @@ footer {
   gap: 2rem;
   background-color: #fbf6ef;
   padding: 2rem;
+}
+
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact input, .contact textarea {
+  width: 80%;
+  resize: vertical;
+}
+
+.contact textarea {
+  min-height: 6rem;
 }
 
 .rdv {
