@@ -423,13 +423,13 @@ body {
 }
 
 h1 {
-  font-size: calc(1.275rem + 0.3vw);
+  font-size: calc(1.3rem + 0.6vw);
   font-weight: 500;
 }
 
 @media (min-width: 1200px) {
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 }
 
@@ -815,6 +815,12 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 1rem;
+}
+
+@media (min-width: 64em) {
+  .index-page h1 {
+    font-size: 2rem;
+  }
 }
 
 .parcours-last img {
