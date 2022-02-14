@@ -12,9 +12,10 @@ body {
 
 // RFS using bootstrap
 h1 {
-  @include font-size(2rem);
+  @include font-size(1.75rem);
   font-weight: 500;
 }
+
 
 h2 {
   @include font-size(1.5rem);

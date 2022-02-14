@@ -32,11 +32,6 @@ main {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
 /* Grouping content
    ========================================================================== */
 /**
@@ -428,13 +423,13 @@ body {
 }
 
 h1 {
-  font-size: calc(1.325rem + 0.9vw);
+  font-size: calc(1.3rem + 0.6vw);
   font-weight: 500;
 }
 
 @media (min-width: 1200px) {
   h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 }
 
@@ -644,7 +639,7 @@ aside nav ul {
           flex-direction: column;
   gap: 0.5rem;
   background-color: #F4CC7B;
-  width: 20ch;
+  width: 21ch;
   z-index: 100;
   margin-left: 1rem;
   padding-left: 1rem;
@@ -820,6 +815,12 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 1rem;
+}
+
+@media (min-width: 64em) {
+  .index-page h1 {
+    font-size: 2rem;
+  }
 }
 
 .parcours-last img {
