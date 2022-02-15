@@ -1,0 +1,44 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: $text-color;
+  font-family: $text-font-stack;
+ line-height: 1.4;
+}
+
+
+
+
+// RFS using bootstrap
+h1 {
+  @include font-size(1.75rem);
+  font-weight: 500;
+}
+
+
+h2 {
+  @include font-size(1.5rem);
+  font-weight: 300;
+}
+h3 {
+  @include font-size(1.25rem);
+  font-weight: 300;
+}
+p {
+  @include font-size(1rem);
+  font-weight: 300;
+b {
+  font-weight: 700;
+}
+}
+
+// //Specific font-size
+footer {
+    h3 {
+      @include font-size(1rem);
+    }
+    p{
+      @include font-size(0.7rem);
+    }
+  }

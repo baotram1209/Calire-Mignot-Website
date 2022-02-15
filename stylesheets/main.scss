@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+//RFS bootstrap
+
+@import
+'../node_modules/rfs/scss.scss';
+// 1. Configuration and helpers
+@import
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins';
+
+// 2. Vendors
+@import
+  'vendors/normalize';
+
+// 3. Base stuff
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography',
+  'base/helpers';
+
+// 4. Layout-related sections
+@import
+  'layout/header',
+  'layout/side',
+  'layout/footer',
+  'layout/content-1',
+  'layout/layout';
+
+// 5. Components
+@import
+  'components/button';
+
+// 6. Page-specific styles
+@import
+  'pages/home',
+  'pages/parcours',
+  'pages/approche',
+  'pages/cadre',
+  'pages/lien',
+  'pages/contact';
+ 
+
+// 7. Themes
+@import
+  'themes/default';

@@ -1,0 +1,19 @@
+.cadre-last {
+    @include breakpoint-up(large)  {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+        "cadre-last-subgrid-1 cadre-last-subgrid-2"
+        ;
+        justify-items: center;
+        align-items: center;
+      
+    
+    }
+    @for $i from 1 through 2 {
+        .cadre-last-subgrid-#{$i} {
+          grid-area: cadre-last-subgrid-#{$i};
+         }
+         
+    }
+    }

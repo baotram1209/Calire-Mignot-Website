@@ -1,0 +1,144 @@
+aside {
+    // position: fixed;
+    // height: $height-nav;
+    // width: $max-width-nav;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: $nav-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5rem;
+   
+}
+
+.search {
+    display: block;
+    width: 100%;
+   margin-top: 2rem;
+
+}
+
+
+aside nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+} 
+
+//DROP down SUBMENU
+
+// aside li > a, .dropdown-btn {
+//     text-decoration: none;
+//     border: none;
+//   background: none;
+//   width: 100%;
+//   text-align: left;
+//   outline: none;
+// }
+
+// .dropdown-container {
+//     display: none;
+// }
+
+// .dropdown-container.active {
+//     display: block;
+// }
+
+  //---INVISIBLE BURGER MENU----
+  .mobile-nav-toggle {
+    display: none;
+}
+
+//----FOR MOBILE - VISIBLE BURGER---
+
+  @include breakpoint-down(small){
+ 
+    .primary-navigation {
+      
+        position: fixed;
+        inset: 0 50% 0 0; //shorthand for top right bottom left (When position is set to absolute or fixed, the top property specifies the distance between the element's outer margin of top edge and the inner border of the top edge of its containing block.) 
+        // padding: #{"min(30vh, 10rem)"} 2em; // need to put in #{} so it works in sass, min takes the minimum of the 2, so when the screen is shorter, it doesn't take 10rem, but 30vh
+        transform: translateX(-100%); // to make the menu hidden before clicking burger, it moves to the left by 110% of its own width
+        transition: transform 350ms ease-out;
+    }
+    .primary-navigation[data-visible="true"]{
+        transform: translateX(0%);
+    }
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        background-color: transparent;
+        background-image: url("background-image/icon-hamburger.svg");
+        background-repeat: no-repeat;
+        width: 2rem;
+        height: 2rem;
+        border: 0;
+       padding: 0;
+       
+    }
+    .mobile-nav-toggle[aria-expanded="true"]{
+        background-image: url("background-image/icon-close.svg");
+    }
+}
+
+
+
+//DROP down SUBMENU
+
+
+
+
+
+
+
+
+
+
+.btn {
+    // text-align: left;
+    background-color: none;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 100%;
+    text-align: start;
+
+    // &:hover {
+    //     border: medium solid $tertiary-nav; //width style color
+    // }
+}
+
+
+.drop-wrapper {
+    position: relative;
+  
+}
+
+.dropright-1, .dropright-2, .dropright-3 {
+    left: 100%;
+    top: 0%; 
+}
+.drop-menu{
+    display: none;
+
+    position: absolute;
+}
+.drop-menu.active {
+  
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: $secondary-nav;
+    width: 21ch;
+    z-index: 100;
+    margin-left: 1rem;
+    padding-left: 1rem;
+}
+

@@ -110,47 +110,43 @@
 
 
   <!--========== MAIN ========-->
-  <main class="grid-item-3 container-subgrid index-page">
+  <main class="grid-item-3 contact">
+    <!-- Contact form -->
+    <h1>
+
+      Me contacter
+
+    </h1>
 
 
-    <div class="subgrid-item-1">
-      <h1>
-      Claire MIGNOT – Gestalt<span style = "white-space: nowrap;">&#8201;&#8201;</span>thérapeute
-      </h1>
+    <form class="form-contact" action="https://formsubmit.co/baotramtran.1209@gmail.com" method="POST">
+      
+        <label for="Name">Prénom/NOM *</label>
+        <input type="text" name="Name" id="Name" required>
+      
+      
+        <label for="Message">Message *</label>
+        <textarea type="text" name="Message" id="Message" required>
+          </textarea>
+     
+          <input type="hidden" name="_next" value="https://baotram1209.github.io/Claire-Mignot-Website/thanks.html">
+      
+      <button type="submit" class="button-content button-send">Envoyer</button>
+    </form>
 
-      <p class="center">Formée à la thérapie du lien</p>
-    </div>
 
-    <figure class="subgrid-item-2">
-      <img src="img/Claire-Mignot.JPG" alt="/">
-    </figure>
-    <article class="subgrid-item-3 hero-text">
-
-      <h2>Cergy le Haut</h2>
-      <p class="center">Tél: 06 52 40 61 62</p>
+    <!-- RDV -->
+  
+      <h2>
+        Prendre RDV
+      </h2>
+      <article class="rdv">
+      <a class="button-content rdv__btn" href="https://www.pagesjaunes.fr/pros/55741519">En ligne</a>
+      <p class="button-content rdv__btn">Tél: 06 52 40 61 62 </p>
     </article>
 
 
-    <!-- <h2 class="subgrid-item-4">
-      Bla bla
-    </h2> -->
-    <article class="subgrid-item-4">
-      <p class="start">
-        <!--text align: start-->
-        Vous trouverez sur ce site des informations sur ma façon de travailler, ses fondements et sa mise en œuvre, et
-        aussi sur mon parcours personnel. Ces éléments sont importants pour envisager un travail avec la thérapeute
-        relationnelle que je suis. Entrer dans le dialogue qui est au cœur de ma pratique supposera en effet un niveau
-        de confiance suffisant pour oser progressivement, et à votre mesure, vous dévoiler, avec ce que vous êtes. Vous
-        pouvez me contacter par mail ou téléphone si vous souhaitez des informations complémentaires ou des
-        éclaircissements.
-      </p>
-      <p class="start">
-        Un thérapeute a pour « mission » de soutenir l’élan de vie présent en chacun de ses patients, doté de sa
-        singularité, son environnement, ses besoins, ses désirs, ses difficultés et ses ressources propres. Et chaque
-        thérapeute est lui-même singulier. Je vous invite à prendre le temps nécessaire pour chercher et en trouver un
-        avec qui vous pourrez vous sentir suffisamment à l’aise. Bonne recherche, et peut-être à bientôt.
-      </p>
-    </article>
+
   </main>
 
   <!--========== FOOTER ========-->
@@ -177,7 +173,6 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script src="js/nav.js"></script>
-
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

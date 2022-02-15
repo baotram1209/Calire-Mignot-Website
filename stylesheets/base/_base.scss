@@ -1,0 +1,83 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  box-sizing: border-box;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/**
+ * Basic styles for links
+ */
+nav a, a:hover {
+  display: block;
+  color: $text-color;
+  text-decoration: none;
+
+  // @include on-event {
+  //   color: $text-color;
+  //   text-decoration: underline;
+  // }
+}
+
+img {
+
+  max-width: 100%;
+  max-height: auto;
+  object-fit: cover;
+}
+
+ img, h1, h2, h3, p, ul {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+figure {
+  display: block;
+  padding: 0;
+  margin: auto;
+}
+
+main img {
+  padding: 1rem;
+}
+nav ul {
+  list-style: none;
+}
+
+// TEXT ALIGN
+h1, h2, h3 {
+  text-align: center;
+}
+main p {
+  text-align: justify;
+}
+p.center {
+  text-align: center;
+}
+
+
+//BODY MARGIN
+body {
+  margin: 0.5rem;
+}
+
+//Space between paragraph, and lists
+main p:not(:last-child),ul:not(:last-child)  {
+  margin-bottom: 1rem;
+}

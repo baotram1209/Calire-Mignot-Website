@@ -1,0 +1,23 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+footer {
+    // height: 100% - $height-side-bar;
+    background-color: $footer-color;
+    color: $secondary-background;   
+    max-width: 100%;
+    height: auto;
+    padding: 0.5rem;
+    text-align: center;
+ 
+    @include breakpoint-up(medium) {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        text-align: left;
+        h3 {
+            text-align: left;
+        }
+    }
+  
+}

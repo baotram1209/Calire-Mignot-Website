@@ -1,0 +1,27 @@
+.approche-last {
+    img {
+        max-width: 80%;
+        margin: auto;
+      }
+// @include breakpoint-up(large)  {
+//     img {
+//         max-width: 100%;
+//       }
+//     display: grid;
+//     grid-template-columns: 2fr 1fr;
+//     grid-template-areas:
+//     "approche-last-subgrid-1 approche-last-subgrid-2"
+//     "approche-last-subgrid-3 approche-last-subgrid-3"
+//     ;
+//     justify-items: center;
+//     align-items: center;
+  
+
+// }
+// @for $i from 1 through 3 {
+//     .approche-last-subgrid-#{$i} {
+//       grid-area: approche-last-subgrid-#{$i};
+//      }
+     
+// }
+}
